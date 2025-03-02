@@ -12,7 +12,7 @@ config = {
 }
 
 if __name__ == "__main__":
-    file_path = r"F:\AStudy\Project\Valve\File\FIC207.OP.SP.PV.txt"
+    file_path = r"files/FIC207.OP.SP.PV.txt"
     valve_data = GetData.FileType1(file_path)
     t=Data_homogenization_SegmentedResampling(valve_data, 10, 1000)
     t_equation=find_best_model(t.get_valveOpening(),t.get_valveFlowRate())
